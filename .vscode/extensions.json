@@ -1,0 +1,19 @@
+{
+  "recommendations": [
+    "vue.volar",
+    "antfu.iconify",
+    "mikestead.dotenv",
+    "sdras.vue-vscode-snippets",
+    "afzalsayed96.icones",
+    "antfu.unocss",
+    "christian-kohler.path-intellisense",
+    "dbaeumer.vscode-eslint",
+    "editorconfig.editorconfig",
+    "esbenp.prettier-vscode",
+    "naumovs.color-highlight",
+    "pkief.material-icon-theme",
+    "sdras.vue-vscode-snippets",
+    "steoates.autoimport",
+    "vue.vscode-typescript-vue-plugin"
+  ]
+}
