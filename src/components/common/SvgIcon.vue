@@ -39,7 +39,6 @@
   const symbolId = computed(() => {
     const defaultCustomIcon = 'no-icon'
     const icon = props.customIcon || defaultCustomIcon
-    console.log(icon)
     return `#icon-custom-${icon}`
   })
 

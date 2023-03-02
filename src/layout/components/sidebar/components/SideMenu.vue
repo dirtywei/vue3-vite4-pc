@@ -14,7 +14,7 @@
 <script setup>
   import { usePermissionStore, useAppStore } from '@/store'
   import { isExternal } from '@/utils'
-  import { renderCustomIcon, renderIcon } from '@/hooks/common/icon'
+  import { renderCustomIcon, renderIcon } from '@/hooks'
 
   const router = useRouter()
   const curRoute = useRoute()

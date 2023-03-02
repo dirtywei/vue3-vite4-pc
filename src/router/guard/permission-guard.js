@@ -1,5 +1,5 @@
 import { getToken, refreshAccessToken, isNullOrWhitespace } from '@/utils'
-import { handleMatched } from '@/hooks/business/beforeEach'
+import { handleMatched } from '@/hooks'
 
 const WHITE_LIST = ['/login', '/404']
 export function createPermissionGuard(router) {

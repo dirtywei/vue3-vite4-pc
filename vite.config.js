@@ -1,11 +1,14 @@
-import { defineConfig } from 'vite'
+import { defineConfig, loadEnv } from 'vite'
 import { createVitePlugins } from './build/plugin'
-import { getSrcPath, getRootPath } from './build/utils'
+import { getSrcPath, getRootPath, convertEnv } from './build/utils'
 
 // https://vitejs.dev/config/
-export default defineConfig(() => {
+export default defineConfig(({ command, mode }) => {
   const srcPath = getSrcPath()
   const rootPath = getRootPath()
+  const isBuild = command === 'build'
+  const env = loadEnv(mode, process.cwd())
+  const viteEnv = convertEnv(env)
 
   return {
     resolve: {
@@ -14,7 +17,7 @@ export default defineConfig(() => {
         '@': srcPath
       }
     },
-    plugins: createVitePlugins(),
+    plugins: createVitePlugins(viteEnv, isBuild),
     build: {
       outDir: 'dist', // 指定打包路径，默认为项目根目录下的 dist 目录
       minify: 'terser',

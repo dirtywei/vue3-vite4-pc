@@ -30,6 +30,18 @@ export default {
         requiresAuth: false,
         icon: 'mdi:card-outline'
       }
+    },
+    {
+      name: 'Crud',
+      path: 'crud',
+      component: () => import('@/views/component/table/index.vue'),
+      meta: {
+        title: 'CRUD表格',
+        icon: 'ic:baseline-table-view',
+        role: ['admin'],
+        requireAuth: true,
+        keepAlive: true
+      }
     }
   ]
 }

@@ -9,7 +9,7 @@
 
 <script setup>
   import { useUserStore } from '@/store'
-  import { renderIcon } from '@/hooks/common/icon'
+  import { renderIcon } from '@/hooks'
 
   const userStore = useUserStore()
 

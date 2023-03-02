@@ -85,7 +85,6 @@
     try {
       loading.value = true
       window.$message.loading('正在验证...')
-      console.log(2222)
       const res = await fetchLogin({ name, password: password.toString() })
       window.$message.success('登录成功')
       setToken(res.data.token)

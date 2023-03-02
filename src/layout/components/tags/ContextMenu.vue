@@ -12,7 +12,7 @@
 
 <script setup>
   import { useTagsStore, useAppStore } from '@/store'
-  import { renderIcon } from '@/hooks/common/icon.js'
+  import { renderIcon } from '@/hooks'
 
   const props = defineProps({
     show: {
@@ -77,11 +77,9 @@
       'reload',
       () => {
         if (route.meta?.keepAlive) {
-          console.log(111)
           // 重置keepAlive
           appStore.setAliveKeys(route.name, +new Date())
         }
-        console.log(222)
         appStore.reloadPage()
       }
     ],

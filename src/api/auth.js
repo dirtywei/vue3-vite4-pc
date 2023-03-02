@@ -5,21 +5,21 @@ import { request } from '@/utils'
  * @param userName - 用户名
  * @param password - 密码
  */
-export function fetchLogin(userName, password) {
-  return request.post('/m2/557839-0-default/65312047', { userName, password }, { noNeedToken: true })
+export function fetchLogin(data) {
+  return request.post('/auth/refreshToken', data, { noNeedToken: true })
 }
 
 /** 获取用户信息 */
 export function fetchUserInfo() {
-  return request.get('/m2/557839-0-default/65373117')
+  return request.get('/user')
 }
 
 /**
  * 刷新token
  * @param token
  */
-export function fetchUpdateToken(token) {
-  return request.post('/getSmsCode', { token })
+export function fetchUpdateToken() {
+  return request.post('/auth/refreshToken', null, { noNeedTip: true })
 }
 
 /**

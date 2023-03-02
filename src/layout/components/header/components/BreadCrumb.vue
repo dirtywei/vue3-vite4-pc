@@ -12,7 +12,7 @@
 </template>
 
 <script setup>
-  import { renderCustomIcon, renderIcon } from '@/hooks/common/icon'
+  import { renderCustomIcon, renderIcon } from '@/hooks'
 
   const router = useRouter()
   const route = useRoute()
