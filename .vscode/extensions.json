@@ -13,7 +13,6 @@
     "naumovs.color-highlight",
     "pkief.material-icon-theme",
     "sdras.vue-vscode-snippets",
-    "steoates.autoimport",
-    "vue.vscode-typescript-vue-plugin"
+    "steoates.autoimport"
   ]
 }
