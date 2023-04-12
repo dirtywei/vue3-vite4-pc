@@ -24,6 +24,7 @@
       <main class="flex-1 overflow-hidden bg-hex-f6f9f8 dark:bg-hex-101014">
         <AppMain />
       </main>
+      <AppFooter class="mt-15 bc-eee bg-white dark:border-0 dark:bg-dark border-t p-8 b-t-solid" />
     </article>
   </n-layout>
 </template>

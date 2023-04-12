@@ -42,6 +42,18 @@ export default {
         requireAuth: true,
         keepAlive: true
       }
+    },
+    {
+      name: 'Editor',
+      path: 'editor',
+      component: () => import('@/views/component/editor/index.vue'),
+      meta: {
+        title: '富文本',
+        icon: 'mdi:receipt-text-check',
+        role: ['admin'],
+        requireAuth: true,
+        keepAlive: false
+      }
     }
   ]
 }

@@ -1,1 +1,1 @@
-export * from './beforeEach'
+export * from './component'

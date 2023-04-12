@@ -1,0 +1,50 @@
+.quill-editor {
+  font-size: 16px;
+}
+.ql-container {
+  font-size: 16px;
+}
+.ql-snow .ql-editor h1 {
+  font-size: 20px;
+}
+.ql-snow .ql-editor h2 {
+  font-size: 18px;
+}
+.ql-editor p,
+.ql-editor ol,
+.ql-editor ul,
+.ql-editor pre,
+.ql-editor blockquote,
+.ql-editor h1,
+.ql-editor h2,
+.ql-editor .ql-image,
+.ql-editor .ql-divider {
+  margin-bottom: 15px;
+}
+.ql-toolbar.ql-snow {
+  border: 1px solid #ddd;
+  box-sizing: border-box;
+  padding: 8px;
+  border-radius: 4px 4px 0 0;
+}
+.ql-snow.ql-toolbar button {
+  width: 30px;
+  height: 26px;
+}
+.ql-editor.ql-blank::before {
+  color: #ccc;
+  font-style: normal;
+}
+.ql-snow .ql-tooltip {
+  display: none;
+}
+.ql-snow .emoji-icon {
+  position: relative;
+  top: 10px;
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+}
+.ql-snow.ql-toolbar button svg {
+  width: 100%;
+}

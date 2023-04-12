@@ -6,7 +6,7 @@ import { request } from '@/utils'
  * @param password - 密码
  */
 export function fetchLogin(data) {
-  return request.post('/auth/refreshToken', data, { noNeedToken: true })
+  return request.post('/auth/login', data, { noNeedToken: true })
 }
 
 /** 获取用户信息 */
